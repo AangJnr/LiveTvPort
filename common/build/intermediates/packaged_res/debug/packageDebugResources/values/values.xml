@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="common_setup_action_background">#0374BF</color>
+    <color name="common_setup_button_done_selected">#26FFFFFF</color>
+    <color name="common_setup_done_container_background">#04549D</color>
+    <color name="common_setup_input_description">#EEEEEE</color>
+    <color name="common_tv_background">#0288D1</color>
+    <dimen name="setup_common_guidance_background_margin_start">-100dp</dimen>
+    <dimen name="setup_done_button_container_width">138dp</dimen>
+    <dimen name="setup_fragment_transition_long_distance">80dp</dimen>
+    <dimen name="setup_fragment_transition_short_distance">48dp</dimen>
+    <dimen name="setup_guidedactions_item_delimiter_padding">10dp</dimen>
+    <dimen name="setup_guidedactions_selector_margin_end">24dp</dimen>
+    <dimen name="setup_guidedactions_selector_margin_start">24dp</dimen>
+    <dimen name="setup_guidedactions_selector_margin_top">220dp</dimen>
+    <dimen name="setup_guidedactions_vertical_padding">12dp</dimen>
+    <dimen name="setup_guidedstep_guidance_section_width_2pane">600dp</dimen>
+    <dimen name="setup_guidedstep_guidance_section_width_3pane">476dp</dimen>
+    <integer name="setup_fragment_transition_duration">333</integer>
+    <string name="action_text_done">Done</string>
+    <string name="action_text_retry">Retry</string>
+    <string name="action_text_skip">Skip</string>
+    <string name="content_description_episode_format">Season <ns1:g example="1" id="season_number">%1$s</ns1:g> Episode <ns1:g example="1" id="episode_number">%2$s</ns1:g> <ns1:g example="Winter is Coming" id="episode_title">%3$s</ns1:g></string>
+    <string name="content_description_episode_format_no_season_number">Episode <ns1:g example="1807" id="episode_number">%1$s</ns1:g> <ns1:g example="Headline News" id="episode_title">%2$s</ns1:g></string>
+    <string name="description_age_10">Recommended for ages 10 and over.</string>
+    <string name="description_age_11">Recommended for ages 11 and over.</string>
+    <string name="description_age_12">Recommended for ages 12 and over.</string>
+    <string name="description_age_13">Recommended for ages 13 and over.</string>
+    <string name="description_age_14">Recommended for ages 14 and over.</string>
+    <string name="description_age_15">Recommended for ages 15 and over.</string>
+    <string name="description_age_16">Recommended for ages 16 and over.</string>
+    <string name="description_age_17">Recommended for ages 17 and over.</string>
+    <string name="description_age_18">Recommended for ages 18 and over.</string>
+    <string name="description_age_19">Recommended for ages 19 and over.</string>
+    <string name="description_age_20">Recommended for ages 20 and over.</string>
+    <string name="description_age_4">Recommended for ages 4 and over.</string>
+    <string name="description_age_5">Recommended for ages 5 and over.</string>
+    <string name="description_age_6">Recommended for ages 6 and over.</string>
+    <string name="description_age_7">Recommended for ages 7 and over.</string>
+    <string name="description_age_8">Recommended for ages 8 and over.</string>
+    <string name="description_age_9">Recommended for ages 9 and over.</string>
+    <string name="description_ar_tv_atp" translatable="false">Suitable for all audiences. Programs may contain mild violence, language and mature situations.</string>
+    <string name="description_ar_tv_d" translatable="false">Drugs</string>
+    <string name="description_ar_tv_s" translatable="false">Sex</string>
+    <string name="description_ar_tv_sam_13" translatable="false">Suitable for ages 13 and up. Programs may contain mild to moderate language and mild violence and sexual references.</string>
+    <string name="description_ar_tv_sam_16" translatable="false">Suitable for ages 16 and up. Programs may contain more intensive violence and coarse language, partial nudity and moderate sexual references.</string>
+    <string name="description_ar_tv_sam_18" translatable="false">Suitable for mature audiences only. Programs contain strong violence, coarse language and explicit sexual references.</string>
+    <string name="description_ar_tv_v" translatable="false">Violence</string>
+    <string name="description_au_tv_av" translatable="false">Material classified AV is suitable for viewing only by persons aged 15 years or over. It is unsuitable for MA classification because of the intensity and/or frequency of violence, or because violence is central to the theme. In other respects, the requirements of the classification are identical to the MA classification.</string>
+    <string name="description_au_tv_c" translatable="false">Material classified C is intended for children (other than preschool children) who are younger than 14 years of age.</string>
+    <string name="description_au_tv_g" translatable="false">Material classified G is not necessarily intended for children but it must be very mild in impact and must not contain any matter likely to be unsuitable for children to watch without supervision.</string>
+    <string name="description_au_tv_m" translatable="false">Material classified M is for mature audiences. It is recommended for viewing only by persons aged 15 years or over.</string>
+    <string name="description_au_tv_ma" translatable="false">Material classified MA is suitable for viewing only by persons aged 15 years or over because of the intensity and/or frequency of violence, sexual depictions, or coarse language, adult themes or drug use. The impact may be strong.</string>
+    <string name="description_au_tv_p" translatable="false">Material classified P is intended for preschool children.</string>
+    <string name="description_au_tv_pg" translatable="false">Material classified PG may contain adult themes or concepts but must be mild in impact and remain suitable for children to watch with supervision.</string>
+    <string name="description_au_tv_r" translatable="false">Material classified R is legally restricted to adults. Some material classified R may be offensive to sections of the adult community.</string>
+    <string name="description_br_tv_10" translatable="false">Not recommended for ages under 10.</string>
+    <string name="description_br_tv_12" translatable="false">Not recommended for ages under 12.</string>
+    <string name="description_br_tv_14" translatable="false">Not recommended for ages under 14.</string>
+    <string name="description_br_tv_16" translatable="false">Not recommended for ages under 16.</string>
+    <string name="description_br_tv_18" translatable="false">Not recommended for ages under 18.</string>
+    <string name="description_br_tv_d" translatable="false">Drugs</string>
+    <string name="description_br_tv_l" translatable="false">General audiences</string>
+    <string name="description_br_tv_s" translatable="false">Sex</string>
+    <string name="description_br_tv_v" translatable="false">Violence</string>
+    <string name="description_ca_tv_en_14">Programming with this classification contains themes or content elements which might not be suitable for viewers under the age of 14. Parents are strongly cautioned to exercise discretion in permitting viewing by pre-teens and early teens without parent/guardian supervision, as programming with this classification could deal with mature themes and societal issues in a realistic fashion.</string>
+    <string name="description_ca_tv_en_18">This programming is intended for viewers 18 years and older.</string>
+    <string name="description_ca_tv_en_c">This programming is intended for younger children under the age of 8 years.</string>
+    <string name="description_ca_tv_en_c8">This programming is intended for youngsters 8 years and over. It is suggested that a parent/guardian co-view programming assigned this classification with younger children under the age of 8.</string>
+    <string name="description_ca_tv_en_exempt">Exempt programming includes: news, sports, documentaries and other information programming; talk shows, music videos, and variety programming.</string>
+    <string name="description_ca_tv_en_g">This programming is intended for all age groups and appropriate viewing for the entire family.</string>
+    <string name="description_ca_tv_en_pg">This programming, while intended for a general audience, may not be suitable for younger children (under the age of 8). Parents/guardians should be aware that there might be content elements which some could consider inappropriate for unsupervised viewing by children in the 8-13 age range.</string>
+    <string name="description_ca_tv_fr_13" translatable="false">The program is appropriate for viewing by persons 13 years of age or older. Children under 13 may be admitted only if accompanied by an adult.</string>
+    <string name="description_ca_tv_fr_16" translatable="false">The program is appropriate for viewing by persons 16 years of age or older. Programs with this rating present troubling themes, situations or behaviours and adopt a more direct point of view about things.</string>
+    <string name="description_ca_tv_fr_18" translatable="false">The program is appropriate for viewing by persons 18 years of age or older. Programs reserved for adults most often deal primarily with the representation of explicit sexual encounters.  They may also be extremely violent, showing scenes of hyperrealistic cruelty, torture and horror.</string>
+    <string name="description_ca_tv_fr_8" translatable="false">The program is suitable for the general public but could contain mild or occasional violence that may disturb young children. Viewing with adult supervision is therefore recommended for young children (age 8 and under).</string>
+    <string name="description_ca_tv_fr_e" translatable="false">Programs exempt from classification.</string>
+    <string name="description_ca_tv_fr_g" translatable="false">The program is appropriate for viewing by persons of all ages. A program with a "G" rating might offend the sensibilities of children under eight years of age.</string>
+    <string name="description_es_dvb_all">Recommended for all ages.</string>
+    <string name="description_es_dvb_c">Recommended for children.</string>
+    <string name="description_es_dvb_x">Recommended for adults.</string>
+    <string name="description_fr_dvb_u">Recommended for all ages.</string>
+    <string name="description_kr_tv_12">Programs may contain material inappropriate for children under 12, and therefore parental discretion should be used for them.</string>
+    <string name="description_kr_tv_15">Programs may contain material inappropriate for audiences under 15, and therefore parental discretion should be used for them.</string>
+    <string name="description_kr_tv_19">Programs may contain material inappropriate for audiences under 19, and thus are not suitable for youngsters under 19.</string>
+    <string name="description_kr_tv_7">Programs may contain material inappropriate for children under 7, and therefore parental discretion should be used for them.</string>
+    <string name="description_kr_tv_all">Programs do not contain material inappropriate for all ages, and thus are suitable for all ages.</string>
+    <string name="description_nz_fta_tv_ao" translatable="false">Programmes containing adult themes and directed primarily at mature audiences.</string>
+    <string name="description_nz_fta_tv_g" translatable="false">Programmes which exclude material likely to be unsuitable for children. Programmes may not necessarily be designed for child viewers but should not contain material likely to alarm or distress them.</string>
+    <string name="description_nz_fta_tv_pgr" translatable="false">Programmes containing material more suited for mature audiences but not necessarily unsuitable for child viewers when subject to the guidance of a parent or an adult.</string>
+    <string name="description_sg_tv_g" translatable="false">Suitable for all ages.</string>
+    <string name="description_sg_tv_m18" translatable="false">Suitable for persons aged 18 and above.</string>
+    <string name="description_sg_tv_nc16" translatable="false">Suitable for persons aged 16 and above.</string>
+    <string name="description_sg_tv_pg" translatable="false">Suitable for all but parents should guide their young.</string>
+    <string name="description_sg_tv_pg13" translatable="false">Suitable for persons aged 13 and above but parental guidance is advised for children below 13.</string>
+    <string name="description_sg_tv_r21" translatable="false">Suitable for adults aged 21 and above.</string>
+    <string name="description_th_tv_10" translatable="false">Suitable for all audiences.</string>
+    <string name="description_th_tv_13" translatable="false">Parental guidance suggested for viewers age below 13.</string>
+    <string name="description_th_tv_18" translatable="false">Parental guidance suggested for viewers age below 18.</string>
+    <string name="description_th_tv_19" translatable="false">Not suitable for children and teenagers.</string>
+    <string name="description_th_tv_4" translatable="false">Suitable for audiences 3 to 5 years of age.</string>
+    <string name="description_th_tv_6" translatable="false">Suitable for audiences 6 to 12 years of age.</string>
+    <string name="description_us_mv_g">General audiences. Nothing that would offend parents for viewing by children.</string>
+    <string name="description_us_mv_nc17">No one 17 and under admitted. Clearly adult. Children are not admitted.</string>
+    <string name="description_us_mv_pg">Parental guidance suggested. May contain some material parents might not like for their young children.</string>
+    <string name="description_us_mv_pg13">Parents strongly cautioned. Some material may be inappropriate for pre-teenagers.</string>
+    <string name="description_us_mv_r">Restricted, Contains some adult material. Parents are urged to learn more about the film before taking their young children with them.</string>
+    <string name="description_us_tv_14">This program contains some material that many parents would find unsuitable for children under 14 years of age.</string>
+    <string name="description_us_tv_d">Suggestive dialogue</string>
+    <string name="description_us_tv_fv">Fantasy violence</string>
+    <string name="description_us_tv_g">Most parents would find this program suitable for all ages.</string>
+    <string name="description_us_tv_l">Coarse language</string>
+    <string name="description_us_tv_ma">This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17.</string>
+    <string name="description_us_tv_pg">This program contains material that parents may find unsuitable for younger children. Many parents may want to watch it with their younger children.</string>
+    <string name="description_us_tv_s">Sexual content</string>
+    <string name="description_us_tv_v">Violence</string>
+    <string name="description_us_tv_y">This program is designed to be appropriate for all children.</string>
+    <string name="description_us_tv_y7">This program is designed for children age 7 and above.</string>
+    <string name="display_episode_number_format">S<ns1:g example="1" id="season_number">%1$s</ns1:g>: Ep.<ns1:g example="1" id="episode_number">%2$s</ns1:g></string>
+    <string name="display_episode_number_format_no_season_number">Ep.<ns1:g example="1" id="episode_number">%1$s</ns1:g></string>
+    <string name="display_episode_title_format">S<ns1:g example="1" id="season_number">%1$s</ns1:g>: Ep. <ns1:g example="1" id="episode_number">%2$s</ns1:g> <ns1:g example="Winter is Coming" id="episode_title">%3$s</ns1:g></string>
+    <string name="display_episode_title_format_no_season_number">Ep. <ns1:g example="1807" id="episode_number">%1$s</ns1:g> <ns1:g example="Headline News" id="episode_title">%2$s</ns1:g></string>
+    <string name="program_title_with_episode_number"><ns1:g example="Big bang theory" id="programName">%1$s</ns1:g> <![CDATA[<i>]]>S<ns1:g example="1" id="seasonNumber">%2$s</ns1:g>: Ep. <ns1:g example="12" id="episodeNumber">%3$s</ns1:g><![CDATA[</i>]]></string>
+    <string name="program_title_with_episode_number_no_season"><ns1:g example="Big bang theory" id="programName">%1$s</ns1:g> <![CDATA[<i>]]>Ep. <ns1:g example="12" id="episodeNumber">%2$s</ns1:g><![CDATA[</i>]]></string>
+    <item format="float" name="setup_guidedactions_width_weight" type="string">1</item>
+    <string name="title_br_tv_10" translatable="false">PG-10</string>
+    <string name="title_br_tv_12" translatable="false">PG-12</string>
+    <string name="title_br_tv_14" translatable="false">PG-14</string>
+    <string name="title_br_tv_16" translatable="false">PG-16</string>
+    <string name="title_br_tv_18" translatable="false">PG-18</string>
+    <string name="title_br_tv_l" translatable="false">GA</string>
+    <string name="title_ca_tv_fr" translatable="false">French</string>
+    <string name="title_kr_tv_12" translatable="false">12</string>
+    <string name="title_kr_tv_15" translatable="false">15</string>
+    <string name="title_kr_tv_19" translatable="false">19</string>
+    <string name="title_kr_tv_7" translatable="false">7</string>
+    <string name="title_kr_tv_all" translatable="false">ALL</string>
+    <string name="title_us_mv">Film ratings</string>
+    <style name="DoneButtonContainerStyle">
+        <item name="android:background">@color/common_setup_done_container_background</item>
+    </style>
+    <style name="Theme.Setup.GuidedStep" parent="Theme.Leanback.GuidedStep">
+        <item name="android:windowBackground">@color/common_tv_background</item>
+        <item name="android:windowEnterTransition">@null</item>
+        <item name="guidanceBreadcrumbStyle">@style/Widget.Setup.GuidanceBreadcrumbStyle</item>
+        <item name="guidanceContainerStyle">@style/Widget.Setup.GuidanceContainerStyle</item>
+        <item name="guidanceDescriptionStyle">@style/Widget.Setup.GuidanceDescriptionStyle</item>
+        <item name="guidanceTitleStyle">@style/Widget.Setup.GuidanceTitleStyle</item>
+        <item name="guidedActionContentWidthWeight">@string/setup_guidedactions_width_weight</item>
+        <item name="guidedActionItemContainerStyle">@style/Widget.Setup.GuidedActionItemContainerStyle</item>
+        <item name="guidedActionItemCheckmarkStyle">@style/Widget.Setup.GuidedActionItemCheckmarkStyle</item>
+        <item name="guidedActionItemIconStyle">@style/Widget.Setup.GuidedActionItemIconStyle</item>
+        <item name="guidedActionItemTitleStyle">@style/Widget.Setup.GuidedActionItemTitleStyle</item>
+        <item name="guidedActionItemDescriptionStyle">@style/Widget.Setup.GuidedActionItemDescriptionStyle</item>
+        <item name="guidedActionsBackground">@color/common_setup_action_background</item>
+        <item name="guidedActionsElevation">0dp</item>
+        <item name="guidedActionsSelectorDrawable">@drawable/setup_selector_background</item>
+        <item name="guidedStepBackground">@android:color/transparent</item>
+        <item name="setupCommonGuidanceBackground">@android:color/transparent</item>
+        <item name="doneButtonContainerStyle">@style/DoneButtonContainerStyle</item>
+    </style>
+    <style name="Widget.Setup.GuidanceBreadcrumbStyle" parent="Widget.Leanback.GuidanceBreadcrumbStyle">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_above">@null</item>
+        <item name="android:layout_marginTop">156dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">#B3EEEEEE</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Widget.Setup.GuidanceContainerStyle" parent="Widget.Leanback.GuidanceContainerStyle">
+        <item name="android:paddingStart">56dp</item>
+        <item name="android:paddingEnd">32dp</item>
+    </style>
+    <style name="Widget.Setup.GuidanceDescriptionStyle" parent="Widget.Leanback.GuidanceDescriptionStyle">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">start</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:lineSpacingMultiplier">1.465</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">#CCEEEEEE</item>
+    </style>
+    <style name="Widget.Setup.GuidanceTitleStyle" parent="Widget.Leanback.GuidanceTitleStyle">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@id/guidance_breadcrumb</item>
+        <item name="android:layout_centerVertical">false</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">start</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:lineSpacingMultiplier">1.13778</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="Widget.Setup.GuidedActionItemCheckmarkStyle" parent="Widget.Leanback.GuidedActionItemCheckmarkStyle">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="Widget.Setup.GuidedActionItemContainerStyle" parent="Widget.Leanback.GuidedActionItemContainerStyle">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:paddingBottom">@dimen/setup_guidedactions_vertical_padding</item>
+        <item name="android:paddingTop">@dimen/setup_guidedactions_vertical_padding</item>
+        <item name="android:transitionGroup">true</item>
+    </style>
+    <style name="Widget.Setup.GuidedActionItemDescriptionStyle" parent="Widget.Leanback.GuidedActionItemDescriptionStyle">
+        <item name="android:layout_height">17dp</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/common_setup_input_description</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Widget.Setup.GuidedActionItemIconStyle" parent="Widget.Leanback.GuidedActionItemIconStyle">
+        <item name="android:layout_marginEnd">@dimen/setup_guidedactions_item_delimiter_padding</item>
+    </style>
+    <style name="Widget.Setup.GuidedActionItemTitleStyle" parent="Widget.Leanback.GuidedActionItemTitleStyle">
+        <item name="android:layout_height">18dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <declare-styleable name="SetupGuidedStep">
+        
+        <attr format="reference" name="setupCommonGuidanceBackground"/>
+        
+        <attr format="reference" name="doneButtonContainerStyle"/>
+    </declare-styleable>
+</resources>

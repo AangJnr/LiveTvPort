@@ -1,0 +1,31 @@
+package com.android.tv.common.flags.impl;
+
+import com.android.tv.common.flags.TunerFlags;
+import dagger.internal.Factory;
+import dagger.internal.Preconditions;
+import javax.annotation.processing.Generated;
+
+@Generated(
+    value = "dagger.internal.codegen.ComponentProcessor",
+    comments = "https://google.github.io/dagger"
+)
+public final class DefaultFlagsModule_ProvideTunerFlagsFactory implements Factory<TunerFlags> {
+  private final DefaultFlagsModule module;
+
+  public DefaultFlagsModule_ProvideTunerFlagsFactory(DefaultFlagsModule module) {
+    this.module = module;
+  }
+
+  @Override
+  public TunerFlags get() {
+    return provideTunerFlags(module);
+  }
+
+  public static DefaultFlagsModule_ProvideTunerFlagsFactory create(DefaultFlagsModule module) {
+    return new DefaultFlagsModule_ProvideTunerFlagsFactory(module);
+  }
+
+  public static TunerFlags provideTunerFlags(DefaultFlagsModule instance) {
+    return Preconditions.checkNotNull(instance.provideTunerFlags(), "Cannot return null from a non-@Nullable @Provides method");
+  }
+}

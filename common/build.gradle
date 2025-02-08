@@ -1,0 +1,109 @@
+plugins {
+    id('com.android.library')
+    id('com.google.protobuf')
+}
+
+android {
+    buildFeatures {
+        buildConfig = true
+    }
+    compileSdk 34
+    namespace 'com.android.tv.common'
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.24-asop"
+        resConfigs "en"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField "boolean", "AOSP", "true"
+            buildConfigField "boolean", "ENG", "true"
+            buildConfigField "boolean", "NO_JNI_TEST", "false"
+        }
+        release {
+            minifyEnabled true
+            buildConfigField "boolean", "AOSP", "true"
+            buildConfigField "boolean", "ENG", "false"
+            buildConfigField "boolean", "NO_JNI_TEST", "false"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res'] // ✅ Corrected res path
+            java.srcDirs = ['src/main/java'] // ✅ Adjusted Java src path
+            manifest.srcFile 'src/main/AndroidManifest.xml' // ✅ Set correct manifest path
+
+            proto {
+                srcDir 'src/main/java/com/android/tv/common/compat/internal' // ✅ Protobuf directory
+                srcDir 'src/main/java/com/android/tv/common/flags/proto' // ✅ Protobuf directory
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly files('../libs/framework.jar')
+    //api 'androidx.tvprovider:tvprovider:1.0.0'
+
+
+    // AndroidX Dependencies
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.leanback:leanback:1.1.0-alpha02'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
+
+    // ExoPlayer
+    implementation 'androidx.media3:media3-exoplayer:1.1.0'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.1.0'
+    implementation "androidx.media3:media3-exoplayer-hls:1.1.0"
+
+    // Dagger Dependency Injection
+    implementation 'com.google.dagger:dagger:2.23'
+    implementation 'com.google.dagger:dagger-android:2.23'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.23'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.23'
+
+    // Auto Value
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.3'
+    implementation 'com.google.auto.value:auto-value:1.5.3'
+
+    // Guava & Protobuf
+    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'com.google.protobuf:protobuf-javalite:3.11.0'
+
+    // Local module dependency
+ }
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.11.0'
+    }
+    generateProtoTasks {
+        all().configureEach { task ->
+            task.builtins {
+                java {
+                    option "lite"
+                }
+            }
+        }
+    }
+}
+

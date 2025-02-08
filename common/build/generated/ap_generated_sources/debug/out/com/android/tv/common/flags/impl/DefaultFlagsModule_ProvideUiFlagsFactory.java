@@ -1,0 +1,31 @@
+package com.android.tv.common.flags.impl;
+
+import com.android.tv.common.flags.UiFlags;
+import dagger.internal.Factory;
+import dagger.internal.Preconditions;
+import javax.annotation.processing.Generated;
+
+@Generated(
+    value = "dagger.internal.codegen.ComponentProcessor",
+    comments = "https://google.github.io/dagger"
+)
+public final class DefaultFlagsModule_ProvideUiFlagsFactory implements Factory<UiFlags> {
+  private final DefaultFlagsModule module;
+
+  public DefaultFlagsModule_ProvideUiFlagsFactory(DefaultFlagsModule module) {
+    this.module = module;
+  }
+
+  @Override
+  public UiFlags get() {
+    return provideUiFlags(module);
+  }
+
+  public static DefaultFlagsModule_ProvideUiFlagsFactory create(DefaultFlagsModule module) {
+    return new DefaultFlagsModule_ProvideUiFlagsFactory(module);
+  }
+
+  public static UiFlags provideUiFlags(DefaultFlagsModule instance) {
+    return Preconditions.checkNotNull(instance.provideUiFlags(), "Cannot return null from a non-@Nullable @Provides method");
+  }
+}

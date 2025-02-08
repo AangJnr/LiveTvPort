@@ -1,0 +1,27 @@
+package com.android.tv.common.dagger;
+
+import android.os.Looper;
+import dagger.internal.Factory;
+import dagger.internal.Preconditions;
+import javax.annotation.processing.Generated;
+
+@Generated(
+    value = "dagger.internal.codegen.ComponentProcessor",
+    comments = "https://google.github.io/dagger"
+)
+public final class ApplicationModule_ProvideMainLooperFactory implements Factory<Looper> {
+  private static final ApplicationModule_ProvideMainLooperFactory INSTANCE = new ApplicationModule_ProvideMainLooperFactory();
+
+  @Override
+  public Looper get() {
+    return provideMainLooper();
+  }
+
+  public static ApplicationModule_ProvideMainLooperFactory create() {
+    return INSTANCE;
+  }
+
+  public static Looper provideMainLooper() {
+    return Preconditions.checkNotNull(ApplicationModule.provideMainLooper(), "Cannot return null from a non-@Nullable @Provides method");
+  }
+}

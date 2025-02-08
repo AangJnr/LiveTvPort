@@ -1,0 +1,49 @@
+ plugins {
+    id('com.android.library')
+ }
+android {
+    compileSdk 34
+    namespace 'com.google.android.tv.partner.support'
+
+    defaultConfig {
+        minSdk 23
+        targetSdk  34
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res'] // ✅ Ensure res path is correct
+            java.srcDirs = ['src/main/java'] // ✅ Ensure Java path is correct
+            manifest.srcFile 'src/main/AndroidManifest.xml' // ✅ Ensure correct manifest path
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // AndroidX and support libraries
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+    // AutoValue Dependency (Converted from `tv-auto-value-jar`)
+    implementation 'com.google.auto.value:auto-value:1.5.3'
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.3'
+
+    // Additional libraries converted from `libs`
+    implementation 'com.google.guava:guava:28.1-jre'
+}
