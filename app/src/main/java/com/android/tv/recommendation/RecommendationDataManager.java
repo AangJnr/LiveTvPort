@@ -33,9 +33,12 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
-import android.util.Log;
+import androidx.tvprovider.media.tv.TvContractCompat;
 
+import android.util.Log;
+import android.media.tv.TvContract.WatchedPrograms;
 import com.android.tv.TvSingletons;
+//import com.android.tv.WatchedPrograms;
 import com.android.tv.common.WeakHandler;
 import com.android.tv.common.util.PermissionUtils;
 import com.android.tv.data.ChannelDataManager;
@@ -53,6 +56,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+
 
 /** Manages teh data need to make recommendations. */
 public class RecommendationDataManager implements WatchedHistoryManager.Listener {
@@ -273,11 +277,13 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
                 mWatchedHistoryManager.setListener(this);
                 mWatchedHistoryManager.start();
             } else {
+                Uri uri = TvContractCompat.WatchNextPrograms.CONTENT_URI;
+
                 mContext.getContentResolver()
                         .registerContentObserver(
-                                TvContract.WatchedPrograms.CONTENT_URI, true, mContentObserver);
+                                WatchedPrograms.CONTENT_URI, true, mContentObserver);
                 mHandler.obtainMessage(
-                                MSG_UPDATE_WATCH_HISTORY, TvContract.WatchedPrograms.CONTENT_URI)
+                                MSG_UPDATE_WATCH_HISTORY, WatchedPrograms.CONTENT_URI)
                         .sendToTarget();
             }
             mTvInputManager = (TvInputManager) mContext.getSystemService(Context.TV_INPUT_SERVICE);
@@ -402,18 +408,18 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
         // Have to initiate the indexes of WatchedProgram Columns.
         if (mIndexWatchChannelId == -1) {
             mIndexWatchChannelId =
-                    cursor.getColumnIndex(TvContract.WatchedPrograms.COLUMN_CHANNEL_ID);
-            mIndexProgramTitle = cursor.getColumnIndex(TvContract.WatchedPrograms.COLUMN_TITLE);
+                    cursor.getColumnIndex(WatchedPrograms.COLUMN_CHANNEL_ID);
+            mIndexProgramTitle = cursor.getColumnIndex(WatchedPrograms.COLUMN_TITLE);
             mIndexProgramStartTime =
-                    cursor.getColumnIndex(TvContract.WatchedPrograms.COLUMN_START_TIME_UTC_MILLIS);
+                    cursor.getColumnIndex(WatchedPrograms.COLUMN_START_TIME_UTC_MILLIS);
             mIndexProgramEndTime =
-                    cursor.getColumnIndex(TvContract.WatchedPrograms.COLUMN_END_TIME_UTC_MILLIS);
+                    cursor.getColumnIndex(WatchedPrograms.COLUMN_END_TIME_UTC_MILLIS);
             mIndexWatchStartTime =
                     cursor.getColumnIndex(
-                            TvContract.WatchedPrograms.COLUMN_WATCH_START_TIME_UTC_MILLIS);
+                            WatchedPrograms.COLUMN_WATCH_START_TIME_UTC_MILLIS);
             mIndexWatchEndTime =
                     cursor.getColumnIndex(
-                            TvContract.WatchedPrograms.COLUMN_WATCH_END_TIME_UTC_MILLIS);
+                            WatchedPrograms.COLUMN_WATCH_END_TIME_UTC_MILLIS);
         }
 
         Program program =
@@ -492,7 +498,7 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
             switch (TvUriMatcher.match(uri)) {
                 case TvUriMatcher.MATCH_WATCHED_PROGRAM_ID:
                     if (!mHandler.hasMessages(
-                            MSG_UPDATE_WATCH_HISTORY, TvContract.WatchedPrograms.CONTENT_URI)) {
+                            MSG_UPDATE_WATCH_HISTORY, WatchedPrograms.CONTENT_URI)) {
                         mHandler.obtainMessage(MSG_UPDATE_WATCH_HISTORY, uri).sendToTarget();
                     }
                     break;

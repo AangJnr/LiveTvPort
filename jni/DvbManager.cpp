@@ -189,8 +189,11 @@ int DvbManager::tuneInternal(JNIEnv *env, jobject thiz,
             .cmd = DTV_FREQUENCY
         };
         struct dtv_property bandwidthProperty = {
-             .cmd = DTV_BANDWIDTH_HZ, .u.data = 8000000
+             .cmd = DTV_BANDWIDTH_HZ
         };
+
+        bandwidthProperty.u.data = 8000000;
+
         frequencyProperty.u.data = static_cast<__u32>(frequency);
         struct dtv_property modulationProperty = { .cmd = DTV_MODULATION };
         if (strncmp(modulationStr, "QAM", 3) == 0) {

@@ -103,7 +103,7 @@ public class ProgramDetailsFragment extends DetailsFragment
     public void onStart() {
         super.onStart();
         VerticalGridView container =
-                (VerticalGridView) getActivity().findViewById(R.id.container_list);
+                (VerticalGridView) getActivity().findViewById(androidx.leanback.R.id.container_list);
         // Need to manually modify offset. Please refer DetailsFragment.setVerticalGridViewLayout.
         container.setItemAlignmentOffset(0);
         container.setWindowAlignmentOffset(
@@ -114,7 +114,7 @@ public class ProgramDetailsFragment extends DetailsFragment
         DetailsOverviewRowPresenter rowPresenter =
                 new DetailsOverviewRowPresenter(new DetailsContentPresenter(getActivity()));
         rowPresenter.setBackgroundColor(
-                getResources().getColor(R.color.common_tv_background, null));
+                getResources().getColor(com.android.tv.common.R.color.common_tv_background, null));
         rowPresenter.setSharedElementEnterTransition(
                 getActivity(), DetailsActivity.SHARED_ELEMENT_NAME);
         rowPresenter.setOnActionClickedListener(onCreateOnActionClickedListener());

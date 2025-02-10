@@ -11,6 +11,9 @@ pluginManagement {
         jcenter()
         mavenCentral()
         gradlePluginPortal()
+        flatDir {
+            dirs "${rootDir}/libs"
+        }
     }
 }
 
@@ -20,11 +23,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
+        flatDir {
+            dirs "${rootDir}/libs"
+        }
     }
-
-
 
 }
 
 rootProject.name = "LiveTv Port"
-include ':app', ':common', 'partner_support'
+include ':app', ':common', ':partner_support'
+include ':jni'//, ':jni:minijail'
+

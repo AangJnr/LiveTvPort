@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/ulquiorra/.gradle/caches/8.10.2/transforms/cf41f6e85b3eab92298e3bb820ab3773/transformed/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

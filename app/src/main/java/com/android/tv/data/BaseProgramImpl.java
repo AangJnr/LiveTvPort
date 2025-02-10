@@ -39,13 +39,13 @@ public abstract class BaseProgramImpl implements BaseProgram {
                 // Do not show "S0: ".
                 return context.getResources()
                         .getString(
-                                R.string.display_episode_title_format_no_season_number,
+                                com.android.tv.common. R.string.display_episode_title_format_no_season_number,
                                 episodeNumber,
                                 episodeTitle);
             } else {
                 return context.getResources()
                         .getString(
-                                R.string.display_episode_title_format,
+                                com.android.tv.common.R.string.display_episode_title_format,
                                 seasonNumber,
                                 episodeNumber,
                                 episodeTitle);
@@ -65,13 +65,13 @@ public abstract class BaseProgramImpl implements BaseProgram {
                 // Do not list season if it is empty or 0
                 return context.getResources()
                         .getString(
-                                R.string.content_description_episode_format_no_season_number,
+                                com.android.tv.common.R.string.content_description_episode_format_no_season_number,
                                 episodeNumber,
                                 episodeTitle);
             } else {
                 return context.getResources()
                         .getString(
-                                R.string.content_description_episode_format,
+                                com.android.tv.common.R.string.content_description_episode_format,
                                 seasonNumber,
                                 episodeNumber,
                                 episodeTitle);

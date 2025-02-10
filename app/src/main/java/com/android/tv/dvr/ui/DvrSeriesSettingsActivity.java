@@ -81,7 +81,7 @@ public class DvrSeriesSettingsActivity extends Activity {
         if (!getIntent().getExtras().getBoolean(IS_WINDOW_TRANSLUCENT, true)) {
             getWindow()
                     .setBackgroundDrawable(
-                            new ColorDrawable(getColor(R.color.common_tv_background)));
+                            new ColorDrawable(getColor(com.android.tv.common.R.color.common_tv_background)));
         }
     }
 }

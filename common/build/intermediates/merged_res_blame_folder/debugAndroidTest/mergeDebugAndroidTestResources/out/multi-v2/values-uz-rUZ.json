@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-uz-rUZ/values-uz-rUZ.xml",
+            "map": [
+                {
+                    "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-uz-rUZ/values-uz-rUZ.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,186,276,454,604,824,1016,1245",
+                        "endColumns": "80,89,177,149,219,191,228,195",
+                        "endOffsets": "181,271,449,599,819,1011,1240,1436"
+                    }
+                }
+            ]
+        }
+    ]
+}

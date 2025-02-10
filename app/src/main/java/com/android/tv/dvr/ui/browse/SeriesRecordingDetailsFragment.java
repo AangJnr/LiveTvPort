@@ -78,7 +78,7 @@ public class SeriesRecordingDetailsFragment extends DvrDetailsFragment
         mDvrDataManager = TvSingletons.getSingletons(getActivity()).getDvrDataManager();
         mWatchLabel = getString(R.string.dvr_detail_watch);
         mResumeLabel = getString(R.string.dvr_detail_series_resume);
-        mWatchDrawable = getResources().getDrawable(R.drawable.lb_ic_play, null);
+        mWatchDrawable = getResources().getDrawable(androidx.leanback.R.drawable.lb_ic_play, null);
         mRecordedProgramPresenter = new RecordedProgramPresenter(getContext(), true, true);
         super.onCreate(savedInstanceState);
     }

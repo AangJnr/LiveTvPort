@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="298287050387266501" name="action_text_done">"Готово"</string>
+    <string msgid="9158414021827546309" name="action_text_skip">"Прескокни"</string>
+    <string msgid="6040735693510854344" name="display_episode_number_format">"Сез.<ns1:g id="SEASON_NUMBER">%1$s</ns1:g>: Еп.<ns1:g id="EPISODE_NUMBER">%2$s</ns1:g>"</string>
+    <string msgid="8393554269654325741" name="display_episode_number_format_no_season_number">"Еп.<ns1:g id="EPISODE_NUMBER">%1$s</ns1:g>"</string>
+    <string msgid="5041103178918130554" name="display_episode_title_format">"Сез. <ns1:g id="SEASON_NUMBER">%1$s</ns1:g>: Еп. <ns1:g id="EPISODE_NUMBER">%2$s</ns1:g> <ns1:g id="EPISODE_TITLE">%3$s</ns1:g>"</string>
+    <string msgid="4558449786705748989" name="display_episode_title_format_no_season_number">"Еп. <ns1:g id="EPISODE_NUMBER">%1$s</ns1:g> <ns1:g id="EPISODE_TITLE">%2$s</ns1:g>"</string>
+    <string msgid="2159336538427523610" name="program_title_with_episode_number">"<ns1:g id="PROGRAMNAME">%1$s</ns1:g> &lt;i>Сез.<ns1:g id="SEASONNUMBER">%2$s</ns1:g>: Еп. <ns1:g id="EPISODENUMBER">%3$s</ns1:g>&lt;/i>"</string>
+    <string msgid="6243727201916342169" name="program_title_with_episode_number_no_season">"<ns1:g id="PROGRAMNAME">%1$s</ns1:g> &lt;i>Еп. <ns1:g id="EPISODENUMBER">%2$s</ns1:g>&lt;/i>"</string>
+</resources>

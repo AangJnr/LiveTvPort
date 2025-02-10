@@ -63,7 +63,7 @@ public class DvrPlaybackSideFragment extends GuidedStepFragment {
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View backgroundView = super.onCreateBackgroundView(inflater, container, savedInstanceState);
         backgroundView.setBackgroundColor(
-                getResources().getColor(R.color.lb_playback_controls_background_light));
+                getResources().getColor(androidx.leanback.R.color.lb_playback_controls_background_light));
         return backgroundView;
     }
 
@@ -143,7 +143,7 @@ public class DvrPlaybackSideFragment extends GuidedStepFragment {
         // hiding the overlay fragment and sliding in the side fragment at the same time.
         Transition t = getEnterTransition();
         if (t != null) {
-            t.excludeTarget(R.id.guidedstep_background, true);
+            t.excludeTarget(androidx.leanback.R.id.guidedstep_background, true);
         }
     }
 }

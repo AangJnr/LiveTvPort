@@ -183,7 +183,7 @@ public class PlayControlsRowView extends MenuRowView {
 
         initializeButton(
                 mJumpPreviousButton,
-                R.drawable.lb_ic_skip_previous,
+                androidx.leanback.R.drawable.lb_ic_skip_previous,
                 R.string.play_controls_description_skip_previous,
                 null,
                 () -> {
@@ -194,7 +194,7 @@ public class PlayControlsRowView extends MenuRowView {
                 });
         initializeButton(
                 mRewindButton,
-                R.drawable.lb_ic_fast_rewind,
+                androidx.leanback.R.drawable.lb_ic_fast_rewind,
                 R.string.play_controls_description_fast_rewind,
                 null,
                 () -> {
@@ -205,7 +205,7 @@ public class PlayControlsRowView extends MenuRowView {
                 });
         initializeButton(
                 mPlayPauseButton,
-                R.drawable.lb_ic_play,
+                androidx.leanback.R.drawable.lb_ic_play,
                 R.string.play_controls_description_play_pause,
                 null,
                 () -> {
@@ -216,7 +216,7 @@ public class PlayControlsRowView extends MenuRowView {
                 });
         initializeButton(
                 mFastForwardButton,
-                R.drawable.lb_ic_fast_forward,
+                androidx.leanback.R.drawable.lb_ic_fast_forward,
                 R.string.play_controls_description_fast_forward,
                 null,
                 () -> {
@@ -227,7 +227,7 @@ public class PlayControlsRowView extends MenuRowView {
                 });
         initializeButton(
                 mJumpNextButton,
-                R.drawable.lb_ic_skip_next,
+                androidx.leanback.R.drawable.lb_ic_skip_next,
                 R.string.play_controls_description_skip_next,
                 null,
                 () -> {
@@ -594,11 +594,11 @@ public class PlayControlsRowView extends MenuRowView {
         }
 
         if (mTimeShiftManager.getPlayStatus() == TimeShiftManager.PLAY_STATUS_PAUSED) {
-            mPlayPauseButton.setImageResId(R.drawable.lb_ic_play);
+            mPlayPauseButton.setImageResId(androidx.leanback.R.drawable.lb_ic_play);
             mPlayPauseButton.setEnabled(
                     mTimeShiftManager.isActionEnabled(TimeShiftManager.TIME_SHIFT_ACTION_ID_PLAY));
         } else {
-            mPlayPauseButton.setImageResId(R.drawable.lb_ic_pause);
+            mPlayPauseButton.setImageResId(androidx.leanback.R.drawable.lb_ic_pause);
             mPlayPauseButton.setEnabled(
                     mTimeShiftManager.isActionEnabled(TimeShiftManager.TIME_SHIFT_ACTION_ID_PAUSE));
         }

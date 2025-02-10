@@ -19,8 +19,8 @@
 #include <sys/types.h>
 #include <signal.h>
 
-#include <libminijail.h>
-#include <scoped_minijail.h>
+#include "libminijail.h"
+#include "scoped_minijail.h"
 #include <android/log.h>
 
 #ifndef LOG_TAG

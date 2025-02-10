@@ -714,7 +714,7 @@ public class DvrUiHelper {
                             ? SpannableStringBuilder.valueOf(title)
                             : Html.fromHtml(
                                     context.getString(
-                                            R.string.program_title_with_episode_number_no_season,
+                                            com.android.tv.common.R.string.program_title_with_episode_number_no_season,
                                             title,
                                             episodeNumber));
             builder = SpannableStringBuilder.valueOf(temp);
@@ -723,7 +723,7 @@ public class DvrUiHelper {
                     SpannableStringBuilder.valueOf(
                             Html.fromHtml(
                                     context.getString(
-                                            R.string.program_title_with_episode_number,
+                                            com.android.tv.common.R.string.program_title_with_episode_number,
                                             title,
                                             seasonNumber,
                                             episodeNumber)));

@@ -16,7 +16,7 @@
 <!-- This manifest is for LiveTv -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.tv">
+  >
 
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -59,17 +59,17 @@
         android:required="false" />
 
     <!-- Receives input events from the TV app. -->
-    <permission
-        android:name="com.android.tv.permission.RECEIVE_INPUT_EVENT"
-        android:description="@string/permdesc_receiveInputEvent"
-        android:label="@string/permlab_receiveInputEvent"
-        android:protectionLevel="signatureOrSystem" />
+<!--    <permission-->
+<!--        android:name="com.android.tv.permission.RECEIVE_INPUT_EVENT"-->
+<!--        android:description="@string/permdesc_receiveInputEvent"-->
+<!--        android:label="@string/permlab_receiveInputEvent"-->
+<!--        android:protectionLevel="signature|system|privileged" />-->
     <!-- Customizes Live TV with customization packages. -->
-    <permission
-        android:name="com.android.tv.permission.CUSTOMIZE_TV_APP"
-        android:description="@string/permdesc_customizeTvApp"
-        android:label="@string/permlab_customizeTvApp"
-        android:protectionLevel="signatureOrSystem" />
+<!--    <permission-->
+<!--        android:name="com.android.tv.permission.CUSTOMIZE_TV_APP"-->
+<!--        android:description="@string/permdesc_customizeTvApp"-->
+<!--        android:label="@string/permlab_customizeTvApp"-->
+<!--        android:protectionLevel="signature|system|privileged"  />-->
 
     <application
         android:name="com.android.tv.app.LiveTvApplication"
@@ -85,7 +85,7 @@
         <!-- providers are listed here to keep them separate from the internal versions -->
         <provider
             android:name="com.android.tv.search.LocalSearchProvider"
-            android:authorities="com.android.tv.search"
+            android:authorities="com.android.tv.search.debug"
             android:enabled="true"
             android:exported="true">
             <meta-data
@@ -94,9 +94,9 @@
         </provider>
         <provider
             android:name="com.android.tv.common.CommonPreferenceProvider"
-            android:authorities="com.android.tv.common.preferences"
+            android:authorities="com.android.tv.common.preferences.debug"
             android:exported="false"
-            android:process="com.android.tv.common" />
+            android:process="com.android.tv.common.debug" />
 
 
         <receiver

@@ -598,7 +598,7 @@ public class WelcomeFragment extends OnboardingFragment {
         setExitTransition(
                 new SetupAnimationHelper.TransitionBuilder()
                         .setSlideEdge(Gravity.START)
-                        .setParentIdsForDelay(new int[] {R.id.onboarding_fragment_root})
+                        .setParentIdsForDelay(new int[] {androidx.leanback.R.id.onboarding_fragment_root})
                         .build());
     }
 
@@ -733,7 +733,7 @@ public class WelcomeFragment extends OnboardingFragment {
 
     @Override
     public int onProvideTheme() {
-        return R.style.Theme_Leanback_Onboarding;
+        return androidx.leanback.R.style.Theme_Leanback_Onboarding;
     }
 
     @Override

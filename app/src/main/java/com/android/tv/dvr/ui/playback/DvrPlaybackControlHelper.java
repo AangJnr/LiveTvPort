@@ -129,7 +129,7 @@ class DvrPlaybackControlHelper extends PlaybackControlGlue {
                     protected void onBindRowViewHolder(RowPresenter.ViewHolder vh, Object item) {
                         super.onBindRowViewHolder(vh, item);
                         vh.setOnKeyListener(DvrPlaybackControlHelper.this);
-                        ViewGroup controlBar = (ViewGroup) vh.view.findViewById(R.id.control_bar);
+                        ViewGroup controlBar = (ViewGroup) vh.view.findViewById(androidx.leanback.R.id.control_bar);
                         mPlayPauseButton = controlBar.getChildAt(1);
                     }
 

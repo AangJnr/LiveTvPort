@@ -181,7 +181,7 @@ public class ProgramGuideSearchFragment extends SearchFragment {
     public void onResume() {
         super.onResume();
 
-        SearchBar searchBar = (SearchBar) getView().findViewById(R.id.lb_search_bar);
+        SearchBar searchBar = (SearchBar) getView().findViewById(androidx.leanback.R.id.lb_search_bar);
         searchBar.setSearchQuery("");
         mResultAdapter.clear();
     }

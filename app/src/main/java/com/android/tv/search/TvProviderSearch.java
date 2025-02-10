@@ -16,9 +16,6 @@
 
 package com.android.tv.search;
 
-import static android.media.tv.TvContract.WatchNextPrograms.COLUMN_START_TIME_UTC_MILLIS;
-import static android.media.tv.TvContract.WatchNextPrograms.CONTENT_URI;
-//import static android.media.tv.TvContract.WatchedPrograms.COLUMN_CHANNEL_ID;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -603,11 +600,11 @@ public class TvProviderSearch implements SearchInterface {
         }
 
         private long getMaxWatchStartTime(long channelId) {
-            Uri uri =  CONTENT_URI;
+            Uri uri =  WatchNextPrograms.CONTENT_URI;
             String[] projections =
                     new String[] {
                         "MAX("
-                                + COLUMN_START_TIME_UTC_MILLIS
+                                +"start_time_utc_millis"//WatchNextPrograms.COLUMN_START_TIME_UTC_MILLIS
                                 + ") AS max_watch_start_time"
                     };
             String selection =  "channel_id" + "=?";

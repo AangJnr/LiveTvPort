@@ -521,7 +521,7 @@ public class DvrPlaybackOverlayFragment extends PlaybackFragment {
         if (!hasSecondaryRow) {
             verticalPadding += mPaddingWithoutSecondaryRow;
         }
-        Fragment fragment = getChildFragmentManager().findFragmentById(R.id.playback_controls_dock);
+        Fragment fragment = getChildFragmentManager().findFragmentById(androidx.leanback.R.id.playback_controls_dock);
         View view = fragment == null ? null : fragment.getView();
         if (view != null) {
             view.setTranslationY(verticalPadding);

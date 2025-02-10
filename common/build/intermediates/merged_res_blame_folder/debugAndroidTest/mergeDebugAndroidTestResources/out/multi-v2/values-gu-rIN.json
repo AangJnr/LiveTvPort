@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-gu-rIN/values-gu-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-gu-rIN/values-gu-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,187,267,445,596,813,1001,1232",
+                        "endColumns": "81,79,177,150,216,187,230,197",
+                        "endOffsets": "182,262,440,591,808,996,1227,1425"
+                    }
+                }
+            ]
+        }
+    ]
+}

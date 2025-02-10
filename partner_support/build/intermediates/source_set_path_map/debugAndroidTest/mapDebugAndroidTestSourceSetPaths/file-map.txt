@@ -1,0 +1,5 @@
+com.google.android.tv.partner.support.test.partner_support-androidTest-0 /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/partner_support/build/generated/res/resValues/androidTest/debug
+com.google.android.tv.partner.support.test.partner_support-mergeDebugAndroidTestResources-1 /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/partner_support/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.google.android.tv.partner.support.test.partner_support-mergeDebugAndroidTestResources-2 /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/partner_support/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.google.android.tv.partner.support.test.partner_support-debugAndroidTest-3 /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/partner_support/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.google.android.tv.partner.support.test.partner_support-debug-4 /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/partner_support/build/intermediates/packaged_res/debug/packageDebugResources

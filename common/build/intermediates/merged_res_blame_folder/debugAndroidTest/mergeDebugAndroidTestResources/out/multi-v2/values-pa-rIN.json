@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-pa-rIN/values-pa-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-pa-rIN/values-pa-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,186,266,445,596,814,1004,1232",
+                        "endColumns": "80,79,178,150,217,189,227,197",
+                        "endOffsets": "181,261,440,591,809,999,1227,1425"
+                    }
+                }
+            ]
+        }
+    ]
+}

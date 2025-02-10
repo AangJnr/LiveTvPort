@@ -101,14 +101,14 @@ public class RecordedProgramDetailsFragment extends DvrDetailsFragment
                             ACTION_RESUME_PLAYING,
                             res.getString(R.string.dvr_detail_resume_play),
                             null,
-                            res.getDrawable(R.drawable.lb_ic_play)));
+                            res.getDrawable(androidx.leanback.R.drawable.lb_ic_play)));
             adapter.set(
                     ACTION_PLAY_FROM_BEGINNING,
                     new Action(
                             ACTION_PLAY_FROM_BEGINNING,
                             res.getString(R.string.dvr_detail_play_from_beginning),
                             null,
-                            res.getDrawable(R.drawable.lb_ic_replay)));
+                            res.getDrawable(androidx.leanback.R.drawable.lb_ic_replay)));
         } else {
             adapter.set(
                     ACTION_PLAY_FROM_BEGINNING,
@@ -116,7 +116,7 @@ public class RecordedProgramDetailsFragment extends DvrDetailsFragment
                             ACTION_PLAY_FROM_BEGINNING,
                             res.getString(R.string.dvr_detail_watch),
                             null,
-                            res.getDrawable(R.drawable.lb_ic_play)));
+                            res.getDrawable(androidx.leanback.R.drawable.lb_ic_play)));
         }
         adapter.set(
                 ACTION_DELETE_RECORDING,

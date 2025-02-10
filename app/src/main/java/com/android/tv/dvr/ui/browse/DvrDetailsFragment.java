@@ -78,7 +78,7 @@ abstract class DvrDetailsFragment extends DetailsFragment {
         super.onStart();
         // TODO: remove the workaround of b/30401180.
         VerticalGridView container =
-                (VerticalGridView) getActivity().findViewById(R.id.container_list);
+                (VerticalGridView) getActivity().findViewById(androidx.leanback.R.id.container_list);
         // Need to manually modify offset. Please refer DetailsFragment.setVerticalGridViewLayout.
         container.setItemAlignmentOffset(0);
         container.setWindowAlignmentOffset(
@@ -89,7 +89,7 @@ abstract class DvrDetailsFragment extends DetailsFragment {
         DetailsOverviewRowPresenter rowPresenter =
                 new DetailsOverviewRowPresenter(new DetailsContentPresenter(getActivity()));
         rowPresenter.setBackgroundColor(
-                getResources().getColor(R.color.common_tv_background, null));
+                getResources().getColor(com.android.tv.common.R.color.common_tv_background, null));
         rowPresenter.setSharedElementEnterTransition(
                 getActivity(), DetailsActivity.SHARED_ELEMENT_NAME);
         rowPresenter.setOnActionClickedListener(onCreateOnActionClickedListener());

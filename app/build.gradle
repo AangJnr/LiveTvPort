@@ -4,6 +4,8 @@ plugins {
 }
 
 android {
+    ndkVersion "25.2.9519653"
+
     namespace 'com.android.tv'
     compileSdk 35
 
@@ -22,23 +24,25 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            applicationIdSuffix ".debug"  // ✅ Changes App ID for debug mode
+            versionNameSuffix "-debug"
+        }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '11'
     }
 
 
-//    sourceSets {
-//        main {
-//            //res.srcDirs = ['res', 'material_res','ratings/res']
-//            java.srcDirs = ['src', 'partner_support/src']
-//            //manifest.srcFile 'AndroidManifest.xml'
-//        }
-//    }
+   externalNativeBuild {
+        cmake {
+            path "../jni/CMakeLists.txt"
+        }
+    }
 
     aaptOptions {
         additionalParameters "--extra-packages", "com.android.tv.tuner", "--extra-packages", "com.android.tv.common"
@@ -54,22 +58,22 @@ android {
 }
 
 dependencies {
+    compileOnly files('../libs/framework.jar')
 
     // Required AOSP dependencies
-    compileOnly files('../libs/framework.jar')
+   // compileOnly files('../libs/android30.jar')
 
     // Additional AOSP libraries
     implementation project(':common')
     implementation project(':partner_support')
+    //api 'androidx.tvprovider:tvprovider:1.0.0'
 
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core:1.1.0'
     implementation 'androidx.palette:palette:1.0.0'
-    implementation 'androidx.leanback:leanback:1.1.0-alpha02'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
-    implementation 'androidx.tvprovider:tvprovider:1.0.0'
 
     // Dagger Dependency Injection
     implementation 'com.google.dagger:dagger:2.23'
@@ -93,21 +97,20 @@ dependencies {
 }
 
 preBuild {
-    doLast {
-        def imlFile = file(project.name + ".iml")
+
+        def imlFile = file( project.name + ".iml")
         println 'Change ' + project.name + '.iml order'
         try {
             def parsedXml = (new XmlParser()).parse(imlFile)
-            def jdkNode = parsedXml.component[1].orderEntry.find { it.'@type' == 'jdk' }
-            parsedXml.component[1].remove(jdkNode)
-            def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) +
-                    " Platform"
-            new Node(parsedXml.component[1], 'orderEntry',
-                    ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
-            XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
-        } catch (FileNotFoundException ignored) {
+            def jdkNode = parsedXml.component[0].orderEntry.find { it.'@type' == 'jdk' }
+            parsedXml.component[0].remove(jdkNode)
+            def sdkString = "Android API " + android.compileSdkVersion.substring("android-".length()) + " Platform"
+            println 'what' + sdkString
+            new Node(parsedXml.component[0], 'orderEntry', ['type': 'jdk', 'jdkName': sdkString, 'jdkType': 'Android SDK'])
+            groovy.xml.XmlUtil.serialize(parsedXml, new FileOutputStream(imlFile))
+        } catch (FileNotFoundException e) {
             // nop, iml not found
+            println "no iml found"
         }
-    }
 }
 

@@ -415,7 +415,7 @@ public class SetupSourcesFragment extends SetupMultiPaneFragment {
                         descriptionView.setAlpha(ALPHA_INPUT_DESCRIPTION);
                         descriptionView.setTextColor(
                                 getResources()
-                                        .getColor(R.color.common_setup_input_description, null));
+                                        .getColor(com.android.tv.common.R.color.common_setup_input_description, null));
                         descriptionView.setTypeface(Typeface.create(getString(R.string.font), 0));
                     }
                 }

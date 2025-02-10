@@ -1,0 +1,46 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.tv.common.test" >
+4
+5    <uses-sdk
+5-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:5:5-74
+6        android:minSdkVersion="23"
+6-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:11:5-15:76
+10        android:name="android.test.InstrumentationTestRunner"
+10-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:11:22-75
+11        android:functionalTest="false"
+11-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:13:22-53
+13        android:label="Tests for com.android.tv.common.test"
+13-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:15:22-74
+14        android:targetPackage="com.android.tv.common.test" />
+14-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:12:22-72
+15
+16    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+16-->[androidx.tvprovider:tvprovider:1.0.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/d81b23363760787ba3dc9fc8c52ec92b/transformed/tvprovider-1.0.0/AndroidManifest.xml:22:5-90
+16-->[androidx.tvprovider:tvprovider:1.0.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/d81b23363760787ba3dc9fc8c52ec92b/transformed/tvprovider-1.0.0/AndroidManifest.xml:22:22-87
+17    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA" />
+17-->[androidx.tvprovider:tvprovider:1.0.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/d81b23363760787ba3dc9fc8c52ec92b/transformed/tvprovider-1.0.0/AndroidManifest.xml:23:5-89
+17-->[androidx.tvprovider:tvprovider:1.0.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/d81b23363760787ba3dc9fc8c52ec92b/transformed/tvprovider-1.0.0/AndroidManifest.xml:23:22-86
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[androidx.media3:media3-common:1.1.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/1ec0a562a221771fa35076a6e9a33666/transformed/media3-common-1.1.0/AndroidManifest.xml:24:5-79
+18-->[androidx.media3:media3-common:1.1.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/1ec0a562a221771fa35076a6e9a33666/transformed/media3-common-1.1.0/AndroidManifest.xml:24:22-76
+19
+20    <application
+20-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:7:5-9:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.8.0] /Users/ulquiorra/.gradle/caches/8.10.2/transforms/cc33055300086ffa7f17e218701363bc/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false" >
+24        <uses-library android:name="android.test.runner" />
+24-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:8:9-60
+24-->/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest5978613036410346589.xml:8:23-57
+25    </application>
+26
+27</manifest>

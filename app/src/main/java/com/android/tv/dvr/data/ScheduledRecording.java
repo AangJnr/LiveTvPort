@@ -825,12 +825,12 @@ public final class ScheduledRecording implements Parcelable {
                 // Do not show "S0: ".
                 return String.format(
                         context.getResources()
-                                .getString(R.string.display_episode_title_format_no_season_number),
+                                .getString(com.android.tv.common.R.string.display_episode_title_format_no_season_number),
                         mEpisodeNumber,
                         episodeTitle);
             } else {
                 return String.format(
-                        context.getResources().getString(R.string.display_episode_title_format),
+                        context.getResources().getString(com.android.tv.common.R.string.display_episode_title_format),
                         mSeasonNumber,
                         mEpisodeNumber,
                         episodeTitle);

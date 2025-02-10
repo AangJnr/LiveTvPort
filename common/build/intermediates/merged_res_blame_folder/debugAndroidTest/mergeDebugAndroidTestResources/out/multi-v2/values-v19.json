@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/ulquiorra/.gradle/caches/8.10.2/transforms/6ff48ba8c66158268b8484c88a589257/transformed/leanback-1.1.0-alpha02/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "659"
+                    }
+                }
+            ]
+        }
+    ]
+}

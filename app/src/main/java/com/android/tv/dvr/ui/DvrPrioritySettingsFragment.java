@@ -28,6 +28,7 @@ import androidx.leanback.widget.GuidedActionsStylist;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.android.tv.R;
 import com.android.tv.TvSingletons;
 import com.android.tv.dvr.DvrDataManager;
@@ -238,7 +239,7 @@ public class DvrPrioritySettingsFragment extends TrackedGuidedStepFragment {
         ImageView imageView = (ImageView) itemView.findViewById(R.id.guidedactions_item_tail_image);
         if (position == 0) {
             // one-time recording
-            itemView.setBackgroundResource(R.drawable.setup_selector_background);
+            itemView.setBackgroundResource(com.android.tv.common.R.drawable.setup_selector_background);
             imageView.setVisibility(View.GONE);
             itemView.setFocusable(false);
             itemView.setElevation(0);
@@ -246,7 +247,7 @@ public class DvrPrioritySettingsFragment extends TrackedGuidedStepFragment {
             titleView.setTypeface(titleView.getTypeface(), Typeface.ITALIC);
         } else if (mSelectedRecording == null) {
             titleView.setTextColor(mActionColor);
-            itemView.setBackgroundResource(R.drawable.setup_selector_background);
+            itemView.setBackgroundResource(com.android.tv.common.R.drawable.setup_selector_background);
             imageView.setImageResource(R.drawable.ic_draggable_white);
             imageView.setVisibility(View.VISIBLE);
             itemView.setFocusable(true);
@@ -262,7 +263,7 @@ public class DvrPrioritySettingsFragment extends TrackedGuidedStepFragment {
             titleView.setTypeface(titleView.getTypeface(), Typeface.NORMAL);
         } else {
             titleView.setTextColor(mActionColor);
-            itemView.setBackgroundResource(R.drawable.setup_selector_background);
+            itemView.setBackgroundResource(com.android.tv.common.R.drawable.setup_selector_background);
             imageView.setVisibility(View.INVISIBLE);
             itemView.setFocusable(true);
             itemView.setElevation(0);
