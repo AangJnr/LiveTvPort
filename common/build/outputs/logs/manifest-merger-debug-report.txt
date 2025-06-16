@@ -3,7 +3,7 @@ manifest
 ADDED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml:16:1-19:12
 INJECTED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml:16:1-19:12
 	package
-		ADDED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml:16:11-42
+		ADDED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml:16:11-45
 		INJECTED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml
 application
 ADDED from /Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/src/main/AndroidManifest.xml:18:5-20

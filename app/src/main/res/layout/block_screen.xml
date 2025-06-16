@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<com.android.tv.ui.BlockScreenView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.dazn.business.ui.BlockScreenView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="gone"
@@ -71,4 +71,4 @@
             android:lineSpacingExtra="@dimen/tvview_block_line_spacing_extra"
             android:textColor="@color/tvview_block_text_color" />
     </LinearLayout>
-</com.android.tv.ui.BlockScreenView>
+</com.dazn.business.ui.BlockScreenView>

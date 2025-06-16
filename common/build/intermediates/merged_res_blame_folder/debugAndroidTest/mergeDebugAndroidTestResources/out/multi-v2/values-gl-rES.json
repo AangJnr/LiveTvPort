@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-gl-rES/values-gl-rES.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-gl-rES/values-gl-rES.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-gl-rES/values-gl-rES.xml",

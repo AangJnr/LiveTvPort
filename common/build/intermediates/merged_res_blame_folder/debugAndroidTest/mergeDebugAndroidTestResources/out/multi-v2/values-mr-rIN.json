@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-mr-rIN/values-mr-rIN.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-mr-rIN/values-mr-rIN.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-mr-rIN/values-mr-rIN.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/.gradle/caches/8.10.2/transforms/cf41f6e85b3eab92298e3bb820ab3773/transformed/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",

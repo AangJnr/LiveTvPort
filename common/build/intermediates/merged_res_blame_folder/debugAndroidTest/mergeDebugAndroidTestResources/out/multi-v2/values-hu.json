@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-hu/values-hu.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/.gradle/caches/8.10.2/transforms/01e5383c758e6f897f96ec02dc3fd370/transformed/media3-exoplayer-1.1.0/res/values-hu/values-hu.xml",

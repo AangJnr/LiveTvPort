@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-az-rAZ/values-az-rAZ.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-az-rAZ/values-az-rAZ.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-az-rAZ/values-az-rAZ.xml",

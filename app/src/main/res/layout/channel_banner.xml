@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 <!--  All info banners have the same id for use by TvTransitionManager. -->
-<com.android.tv.ui.ChannelBannerView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.dazn.business.ui.ChannelBannerView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scene_transition_common"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -162,4 +162,4 @@
 
     </RelativeLayout>
 
-</com.android.tv.ui.ChannelBannerView>
+</com.dazn.business.ui.ChannelBannerView>

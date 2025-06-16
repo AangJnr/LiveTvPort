@@ -55,7 +55,7 @@
             android:fontFamily="@string/font"
             android:singleLine="false" />
 
-        <com.android.tv.dialog.picker.TvPinPicker
+        <com.dazn.business.dialog.picker.TvPinPicker
             android:id="@+id/tv_pin_picker"
             android:importantForAccessibility="yes"
             android:layout_width="match_parent"

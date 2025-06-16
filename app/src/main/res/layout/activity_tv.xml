@@ -23,7 +23,8 @@
     android:foreground="@android:color/transparent"
     android:keepScreenOn="true">
 
-    <com.android.tv.ui.TunableTvView android:id="@+id/main_tunable_tv_view"
+    <com.dazn.business.ui.TunableTvView
+        android:id="@+id/main_tunable_tv_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start|center_vertical" />

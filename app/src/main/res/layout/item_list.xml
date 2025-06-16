@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<com.android.tv.menu.ItemListRowView
+<com.dazn.business.menu.ItemListRowView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lb="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item_list"
@@ -41,4 +41,4 @@
         android:focusable="true"
         lb:horizontalMargin="@dimen/menu_inter_card_spacing" />
 
-</com.android.tv.menu.ItemListRowView>
+</com.dazn.business.menu.ItemListRowView>

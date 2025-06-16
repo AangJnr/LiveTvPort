@@ -17,7 +17,8 @@
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <com.android.tv.ui.AppLayerTvView android:id="@+id/tv_view"
+    <com.dazn.business.ui.AppLayerTvView
+        android:id="@+id/tv_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start|center_vertical" />

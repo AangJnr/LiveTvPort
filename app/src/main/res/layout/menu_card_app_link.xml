@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<com.android.tv.menu.AppLinkCardView
+<com.dazn.business.menu.AppLinkCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/card_layout_width"
     android:layout_height="wrap_content"
@@ -52,4 +52,4 @@
         <include layout="@layout/menu_card_text" />
     </FrameLayout>
 
-</com.android.tv.menu.AppLinkCardView>
+</com.dazn.business.menu.AppLinkCardView>

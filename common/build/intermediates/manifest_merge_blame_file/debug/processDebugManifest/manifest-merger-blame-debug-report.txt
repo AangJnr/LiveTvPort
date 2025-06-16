@@ -15,7 +15,7 @@
 15  ~ limitations under the License
 16-->
 17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-18    package="com.android.tv.common" >
+18    package="com.dazn.business.common" >
 19
 20    <uses-sdk android:minSdkVersion="23" />
 21

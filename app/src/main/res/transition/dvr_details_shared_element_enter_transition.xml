@@ -17,7 +17,7 @@
 
 <transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tv="http://schemas.android.com/apk/res-auto">
-    <transition class="com.android.tv.dvr.ui.FadeBackground"
+    <transition class="com.dazn.business.dvr.ui.FadeBackground"
         android:interpolator="@android:interpolator/linear_out_slow_in"
         android:duration="500"
         tv:fadingMode="fade_in">
@@ -40,7 +40,7 @@
         android:interpolator="@android:interpolator/linear_out_slow_in"
         android:duration="500"/>
     <!-- TODO: Change this to changeImageTransform once b/32405620 is fixed. -->
-    <transition class="com.android.tv.dvr.ui.ChangeImageTransformWithScaledParent"
+    <transition class="com.dazn.business.dvr.ui.ChangeImageTransformWithScaledParent"
         android:interpolator="@android:interpolator/linear_out_slow_in"
         android:duration="500"/>
 </transitionSet>

@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <com.android.tv.guide.ProgramRow
+        <com.dazn.business.guide.ProgramRow
             android:id="@+id/row"
             android:layout_width="match_parent"
             android:layout_height="@dimen/program_guide_table_item_row_height" />

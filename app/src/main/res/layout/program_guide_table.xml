@@ -43,7 +43,7 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/program_guide_table_header_row_background" />
 
-    <com.android.tv.ui.LocaleAwareTextClock
+    <com.dazn.business.ui.LocaleAwareTextClock
         android:id="@+id/clock"
         android:layout_width="@dimen/program_guide_table_header_column_width"
         android:layout_height="@dimen/program_guide_table_header_row_height"
@@ -67,7 +67,7 @@
         android:contentDescription="@null"
         android:src="@drawable/program_guide_time_indicator" />
 
-    <com.android.tv.guide.TimelineRow
+    <com.dazn.business.guide.TimelineRow
         android:id="@+id/time_row"
         android:layout_width="match_parent"
         android:layout_height="@dimen/program_guide_table_header_row_height"
@@ -79,7 +79,7 @@
         android:requiresFadingEdge="horizontal"
         android:background="#00000000" />
 
-    <com.android.tv.guide.ProgramGrid
+    <com.dazn.business.guide.ProgramGrid
         android:id="@+id/grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

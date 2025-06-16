@@ -53,7 +53,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:visibility="gone">
-            <com.android.tv.dvr.ui.list.DvrSchedulesFocusView
+            <com.dazn.business.dvr.ui.list.DvrSchedulesFocusView
                 android:id="@+id/selector"
                 android:tag="@string/dvr_schedules_header_focus_view"
                 android:layout_width="0dp"

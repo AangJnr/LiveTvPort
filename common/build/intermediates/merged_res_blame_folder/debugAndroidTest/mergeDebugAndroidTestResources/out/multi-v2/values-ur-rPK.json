@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-ur-rPK/values-ur-rPK.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-ur-rPK/values-ur-rPK.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/AndroidStudioProjects/LiveTvPort/common/build/intermediates/packaged_res/debug/packageDebugResources/values-ur-rPK/values-ur-rPK.xml",

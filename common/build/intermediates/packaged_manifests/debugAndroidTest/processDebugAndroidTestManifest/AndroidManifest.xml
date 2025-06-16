@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.tv.common.test" >
+    package="com.dazn.business.common.test" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="28"
         android:targetSdkVersion="34" />
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.android.tv.common.test"
-        android:targetPackage="com.android.tv.common.test" />
+        android:label="Tests for com.dazn.business.common.test"
+        android:targetPackage="com.dazn.business.common.test" />
 
     <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
     <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA" />

@@ -1,4 +1,4 @@
-com.android.tv.common
+com.dazn.business.common
 attr doneButtonContainerStyle
 attr setupCommonGuidanceBackground
 color common_setup_action_background

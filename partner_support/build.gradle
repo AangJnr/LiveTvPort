@@ -1,5 +1,7 @@
  plugins {
     id('com.android.library')
+     //id('kotlin-android')
+
  }
 android {
     compileSdk 34
@@ -13,6 +15,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -34,6 +38,7 @@ android {
     lintOptions {
         abortOnError false
     }
+
 }
 
 dependencies {

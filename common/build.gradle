@@ -8,7 +8,7 @@ android {
         buildConfig = true
     }
     compileSdk 34
-    namespace 'com.android.tv.common'
+    namespace 'com.dazn.business.common'
 
     defaultConfig {
         minSdk 23
@@ -46,8 +46,8 @@ android {
             manifest.srcFile 'src/main/AndroidManifest.xml' // ✅ Set correct manifest path
 
             proto {
-                srcDir 'src/main/java/com/android/tv/common/compat/internal' // ✅ Protobuf directory
-                srcDir 'src/main/java/com/android/tv/common/flags/proto' // ✅ Protobuf directory
+                srcDir 'src/main/java/com/dazn/business/common/compat/internal' // ✅ Protobuf directory
+                srcDir 'src/main/java/com/dazn/business/common/flags/proto' // ✅ Protobuf directory
             }
         }
     }
@@ -55,11 +55,13 @@ android {
     lintOptions {
         abortOnError false
     }
+
+
 }
 
 dependencies {
-   // compileOnly files('../libs/framework.jar')
-    compileOnly files('../libs/android30.jar')
+    compileOnly files('../libs/framework.jar')
+    // files('../libs/android30.jar')
 
     api 'androidx.tvprovider:tvprovider:1.0.0'
     // 'com.anggrayudi:android-hidden-api:35.0'

@@ -6,11 +6,11 @@ plugins {
 android {
     ndkVersion "25.2.9519653"
 
-    namespace 'com.android.tv'
+    namespace 'com.dazn.business'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.android.tv"
+        applicationId "com.dazn.business"
         minSdk 28
         targetSdk 35
         versionCode 1
@@ -45,7 +45,7 @@ android {
     }
 
     aaptOptions {
-        additionalParameters "--extra-packages", "com.android.tv.tuner", "--extra-packages", "com.android.tv.common"
+        additionalParameters "--extra-packages", "com.dazn.business.tuner", "--extra-packages", "com.dazn.business.common"
     }
 
     lintOptions {
@@ -58,10 +58,9 @@ android {
 }
 
 dependencies {
-    compileOnly files('../libs/framework.jar')
-
     // Required AOSP dependencies
-   // compileOnly files('../libs/android30.jar')
+    // compileOnly files('../libs/android30.jar')
+    compileOnly files('../libs/framework.jar')
 
     // Additional AOSP libraries
     implementation project(':common')

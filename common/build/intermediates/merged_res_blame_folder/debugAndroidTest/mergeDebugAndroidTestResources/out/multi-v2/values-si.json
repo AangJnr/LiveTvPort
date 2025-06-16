@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.tv.common.test.common-mergeDebugAndroidTestResources-11:/values-si/values-si.xml",
+            "outputFile": "com.dazn.business.common.test.common-mergeDebugAndroidTestResources-11:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/ulquiorra/.gradle/caches/8.10.2/transforms/6ff48ba8c66158268b8484c88a589257/transformed/leanback-1.1.0-alpha02/res/values-si/values-si.xml",
