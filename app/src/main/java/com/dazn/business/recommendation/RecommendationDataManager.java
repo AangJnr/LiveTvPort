@@ -17,6 +17,7 @@
 package com.dazn.business.recommendation;
 
 import android.annotation.SuppressLint;
+import android.annotation.SystemApi;
 import android.content.Context;
 import android.database.ContentObserver;
 import android.database.Cursor;
@@ -36,9 +37,8 @@ import androidx.annotation.WorkerThread;
 import androidx.tvprovider.media.tv.TvContractCompat;
 
 import android.util.Log;
-//import android.media.tv.TvContract.WatchedPrograms;
+import android.media.tv.TvContract.WatchedPrograms;
 import com.dazn.business.TvSingletons;
-//import com.dazn.business.WatchedPrograms;
 import com.dazn.business.common.WeakHandler;
 import com.dazn.business.common.util.PermissionUtils;
 import com.dazn.business.data.ChannelDataManager;
@@ -56,7 +56,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-
 
 /** Manages teh data need to make recommendations. */
 public class RecommendationDataManager implements WatchedHistoryManager.Listener {
@@ -590,21 +589,4 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
         protected void handleMessage(Message msg, @NonNull RecommendationDataManager referent) {}
     }
 
-    public static final class WatchedPrograms implements TvContract.BaseTvColumns {
-        public static final Uri CONTENT_URI = Uri.parse("content://android.media.tv/watched_program");
-        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/watched_program";
-        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/watched_program";
-        public static final String COLUMN_WATCH_START_TIME_UTC_MILLIS = "watch_start_time_utc_millis";
-        public static final String COLUMN_WATCH_END_TIME_UTC_MILLIS = "watch_end_time_utc_millis";
-        public static final String COLUMN_CHANNEL_ID = "channel_id";
-        public static final String COLUMN_TITLE = "title";
-        public static final String COLUMN_START_TIME_UTC_MILLIS = "start_time_utc_millis";
-        public static final String COLUMN_END_TIME_UTC_MILLIS = "end_time_utc_millis";
-        public static final String COLUMN_DESCRIPTION = "description";
-        public static final String COLUMN_INTERNAL_TUNE_PARAMS = "tune_params";
-        public static final String COLUMN_INTERNAL_SESSION_TOKEN = "session_token";
-
-        private WatchedPrograms() {
-        }
-    }
 }

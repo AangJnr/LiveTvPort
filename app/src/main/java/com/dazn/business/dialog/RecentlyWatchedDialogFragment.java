@@ -71,7 +71,7 @@ public class RecentlyWatchedDialogFragment extends SafeDismissDialogFragment
                     @Override
                     public boolean setViewValue(View view, Cursor cursor, int columnIndex) {
                         String name = cursor.getColumnName(columnIndex);
-                        if (TvContract.WatchedPrograms.COLUMN_CHANNEL_ID.equals(name)) {
+                        if (RecommendationDataManager.WatchedPrograms.COLUMN_CHANNEL_ID.equals(name)) {
                             long channelId = cursor.getLong(columnIndex);
                             ((TextView) view).setText(String.valueOf(channelId));
                             // Update display number

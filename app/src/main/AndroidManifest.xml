@@ -72,7 +72,7 @@
 <!--        android:protectionLevel="signature|system|privileged"  />-->
 
     <application
-        android:name="com.android.tv.com.dazn.tv.app.LiveTvApplication"
+        android:name=".app.LiveTvApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:banner="@drawable/live_tv_banner"
@@ -84,7 +84,7 @@
 
         <!-- providers are listed here to keep them separate from the internal versions -->
         <provider
-            android:name="com.android.tv.com.dazn.tv.search.LocalSearchProvider"
+            android:name=".search.LocalSearchProvider"
             android:authorities="com.android.tv.search.debug"
             android:enabled="true"
             android:exported="true">
@@ -93,14 +93,14 @@
                 android:value="CHANNEL|TVINPUT" />
         </provider>
         <provider
-            android:name="com.android.tv.com.dazn.tv.common.CommonPreferenceProvider"
+            android:name=".common.CommonPreferenceProvider"
             android:authorities="com.android.tv.common.preferences.debug"
             android:exported="false"
             android:process="com.android.tv.common.debug" />
 
 
         <receiver
-            android:name="com.android.tv.com.dazn.tv.livetv.receiver.GlobalKeyReceiver"
+            android:name=".livetv.receiver.GlobalKeyReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.GLOBAL_BUTTON" />
@@ -120,7 +120,7 @@
         </receiver>
 
         <activity
-            android:name="com.android.tv.com.dazn.tv.TvActivity"
+            android:name=".TvActivity"
             android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
@@ -131,7 +131,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.tv.com.dazn.tv.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTask"
@@ -167,11 +167,11 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="com.android.tv.com.dazn.tv.LauncherActivity"
+            android:name=".LauncherActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.SetupPassthroughActivity"
+            android:name=".SetupPassthroughActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
@@ -182,17 +182,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.tv.com.dazn.tv.SelectInputActivity"
+            android:name=".SelectInputActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:launchMode="singleTask"
             android:theme="@style/Theme.SelectInputActivity" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.onboarding.OnboardingActivity"
+            android:name=".onboarding.OnboardingActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:launchMode="singleTop"
             android:theme="@style/Theme.Setup.GuidedStep" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.browse.DvrBrowseActivity"
+            android:name=".dvr.ui.browse.DvrBrowseActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="true"
             android:launchMode="singleTask"
@@ -211,7 +211,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.playback.DvrPlaybackActivity"
+            android:name=".dvr.ui.playback.DvrPlaybackActivity"
             android:configChanges="keyboard|keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:launchMode="singleTask"
@@ -225,52 +225,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.tv.com.dazn.tv.ui.DetailsActivity"
+            android:name=".ui.DetailsActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="true"
             android:theme="@style/Theme.TV.Dvr.Browse.Details" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.DvrRecordingSettingsActivity"
+            android:name=".dvr.ui.DvrRecordingSettingsActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="false"
             android:theme="@style/Theme.TV.Dvr.Series.Settings.GuidedStep" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.DvrSeriesSettingsActivity"
+            android:name=".dvr.ui.DvrSeriesSettingsActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:theme="@style/Theme.TV.Dvr.Series.Settings.GuidedStep" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.DvrSeriesDeletionActivity"
+            android:name=".dvr.ui.DvrSeriesDeletionActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:theme="@style/Theme.TV.Dvr.Series.Deletion.GuidedStep" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.DvrSeriesScheduledDialogActivity"
+            android:name=".dvr.ui.DvrSeriesScheduledDialogActivity"
             android:theme="@style/Theme.TV.dialog.HalfSizedDialog" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.list.DvrSchedulesActivity"
+            android:name=".dvr.ui.list.DvrSchedulesActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:theme="@style/Theme.Leanback.Details" />
         <activity
-            android:name="com.android.tv.com.dazn.tv.dvr.ui.list.DvrHistoryActivity"
+            android:name=".dvr.ui.list.DvrHistoryActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="false"
             android:theme="@style/Theme.Leanback.Details" />
 
         <service
-            android:name="com.android.tv.com.dazn.tv.recommendation.NotificationService"
+            android:name=".recommendation.NotificationService"
             android:exported="false" />
         <service
-            android:name="com.android.tv.com.dazn.tv.recommendation.ChannelPreviewUpdater$ChannelPreviewUpdateService"
+            android:name=".recommendation.ChannelPreviewUpdater$ChannelPreviewUpdateService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver
-            android:name="com.android.tv.com.dazn.tv.receiver.BootCompletedReceiver"
+            android:name=".receiver.BootCompletedReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.android.tv.com.dazn.tv.receiver.PackageIntentsReceiver"
+            android:name=".receiver.PackageIntentsReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
@@ -286,7 +286,7 @@
             </intent-filter>
         </receiver> <!-- System initial setup component definition -->
         <activity
-            android:name="com.android.tv.com.dazn.tv.setup.SystemSetupActivity"
+            android:name=".setup.SystemSetupActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="true"
             android:launchMode="singleInstance"
@@ -298,15 +298,15 @@
             </intent-filter>
         </activity> <!-- DVR -->
         <service
-            android:name="com.android.tv.com.dazn.tv.dvr.recorder.DvrRecordingService"
+            android:name=".dvr.recorder.DvrRecordingService"
             android:label="@string/dvr_service_name" />
 
         <receiver
-            android:name="com.android.tv.com.dazn.tv.dvr.recorder.DvrStartRecordingReceiver"
+            android:name=".dvr.recorder.DvrStartRecordingReceiver"
             android:exported="false" />
 
         <service
-            android:name="com.android.tv.com.dazn.tv.data.epg.EpgFetchService"
+            android:name=".data.epg.EpgFetchService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
