@@ -7,12 +7,12 @@ android {
     ndkVersion "25.2.9519653"
 
     namespace 'com.dazn.business'
-    compileSdk 28
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.dazn.business"
         minSdk 28
-        targetSdk 35
+        targetSdk 28
         versionCode 1
         versionName "1.0"
 
@@ -30,8 +30,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '11'
@@ -59,7 +59,7 @@ android {
 
 dependencies {
     // Required AOSP dependencies
-    // compileOnly files('../libs/android30.jar')
+    //compileOnly files('../libs/android30.jar')
     compileOnly files('../libs/framework.jar')
 
     // Additional AOSP libraries

@@ -7,20 +7,20 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    compileSdk 28
+    compileSdk 33
     namespace 'com.dazn.business.common'
 
     defaultConfig {
         minSdk 23
-        targetSdk 34
+        targetSdk 28
         versionCode 1
         versionName "1.24-asop"
         resConfigs "en"
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -76,9 +76,9 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
 
     // ExoPlayer
-    implementation 'androidx.media3:media3-exoplayer:1.1.0'
-    implementation 'androidx.media3:media3-exoplayer-dash:1.1.0'
-    implementation "androidx.media3:media3-exoplayer-hls:1.1.0"
+    implementation 'androidx.media3:media3-exoplayer:1.0.0'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.0.0'
+    implementation "androidx.media3:media3-exoplayer-hls:1.0.0"
 
     // Dagger Dependency Injection
     implementation 'com.google.dagger:dagger:2.23'

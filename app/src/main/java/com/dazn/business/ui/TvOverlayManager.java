@@ -1,21 +1,7 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 package com.dazn.business.ui;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentManager.OnBackStackChangedListener;
@@ -88,6 +74,7 @@ import java.util.Set;
 /** A class responsible for the life cycle and event handling of the pop-ups over TV view. */
 @UiThread
 @AutoFactory
+@SuppressLint("ShiftFlags")
 public class TvOverlayManager implements AccessibilityStateChangeListener {
     private static final String TAG = "TvOverlayManager";
     private static final boolean DEBUG = false;
@@ -225,7 +212,6 @@ public class TvOverlayManager implements AccessibilityStateChangeListener {
 
     private final List<Runnable> mPendingActions = new ArrayList<>();
     private final Queue<PendingDialogAction> mPendingDialogActionQueue = new LinkedList<>();
-    private final TvOptionsRowAdapter.Factory mTvOptionsRowAdapterFactory;
 
     private OnBackStackChangedListener mOnBackStackChangedListener;
 
@@ -246,7 +232,6 @@ public class TvOverlayManager implements AccessibilityStateChangeListener {
             @Provided TvOptionsRowAdapter.Factory mTvOptionsRowAdapterFactory) {
         mMainActivity = mainActivity;
         mChannelTuner = channelTuner;
-        this.mTvOptionsRowAdapterFactory = mTvOptionsRowAdapterFactory;
         TvSingletons singletons = TvSingletons.getSingletons(mainActivity);
         mChannelDataManager = channelDataManager;
         mInputManager = tvInputManager;
@@ -265,17 +250,14 @@ public class TvOverlayManager implements AccessibilityStateChangeListener {
                         mKeypadChannelSwitchView,
                         selectInputView);
         mTransitionManager.setListener(
-                new TvTransitionManager.Listener() {
-                    @Override
-                    public void onSceneChanged(int fromScene, int toScene) {
-                        // Call onOverlayOpened first so that the listener can know that a new scene
-                        // will be opened when the onOverlayClosed is called.
-                        if (toScene != TvTransitionManager.SCENE_TYPE_EMPTY) {
-                            onOverlayOpened(convertSceneToOverlayType(toScene));
-                        }
-                        if (fromScene != TvTransitionManager.SCENE_TYPE_EMPTY) {
-                            onOverlayClosed(convertSceneToOverlayType(fromScene));
-                        }
+                (fromScene, toScene) -> {
+                    // Call onOverlayOpened first so that the listener can know that a new scene
+                    // will be opened when the onOverlayClosed is called.
+                    if (toScene != TvTransitionManager.SCENE_TYPE_EMPTY) {
+                        onOverlayOpened(convertSceneToOverlayType(toScene));
+                    }
+                    if (fromScene != TvTransitionManager.SCENE_TYPE_EMPTY) {
+                        onOverlayClosed(convertSceneToOverlayType(fromScene));
                     }
                 });
         // Menu
@@ -286,7 +268,7 @@ public class TvOverlayManager implements AccessibilityStateChangeListener {
                         tvView,
                         optionsManager,
                         menuView,
-                        new MenuRowFactory(mainActivity, tvView, this.mTvOptionsRowAdapterFactory),
+                        new MenuRowFactory(mainActivity, tvView, mTvOptionsRowAdapterFactory),
                         new Menu.OnMenuVisibilityChangeListener() {
                             @Override
                             public void onMenuVisibilityChange(boolean visible) {

@@ -17,11 +17,9 @@
 package com.dazn.business.recommendation;
 
 import android.annotation.SuppressLint;
-import android.annotation.SystemApi;
 import android.content.Context;
 import android.database.ContentObserver;
 import android.database.Cursor;
-import android.media.tv.TvContract;
 import android.media.tv.TvInputInfo;
 import android.media.tv.TvInputManager;
 import android.media.tv.TvInputManager.TvInputCallback;
@@ -37,7 +35,8 @@ import androidx.annotation.WorkerThread;
 import androidx.tvprovider.media.tv.TvContractCompat;
 
 import android.util.Log;
-import android.media.tv.TvContract.WatchedPrograms;
+//import android.media.tv.TvContract.WatchedPrograms;
+import com.dazn.business.TvContract.WatchedPrograms;
 import com.dazn.business.TvSingletons;
 import com.dazn.business.common.WeakHandler;
 import com.dazn.business.common.util.PermissionUtils;
@@ -133,8 +132,6 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
 
     private final TvInputCallback mInternalCallback =
             new TvInputCallback() {
-                @Override
-                public void onInputStateChanged(String inputId, int state) {}
 
                 @Override
                 public void onInputAdded(String inputId) {
@@ -182,9 +179,6 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
                         mHandler.sendEmptyMessage(MSG_NOTIFY_CHANNEL_RECORD_MAP_CHANGED);
                     }
                 }
-
-                @Override
-                public void onInputUpdated(String inputId) {}
             };
 
     private RecommendationDataManager(Context context) {
@@ -206,7 +200,7 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
         runOnMainThread(
                 () -> {
                     removeListener(listener);
-                    if (mListeners.size() == 0) {
+                    if (mListeners.isEmpty()) {
                         stop();
                     }
                 });
@@ -381,6 +375,7 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
 
     @Override
     public void onLoadFinished() {
+        assert mWatchedHistoryManager != null;
         for (WatchedHistoryManager.WatchedRecord record :
                 mWatchedHistoryManager.getWatchedHistory()) {
             updateChannelRecordFromWatchedProgram(convertFromWatchedHistoryManagerRecords(record));
@@ -494,13 +489,11 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
         @SuppressLint("SwitchIntDef")
         @Override
         public void onChange(final boolean selfChange, final Uri uri) {
-            switch (TvUriMatcher.match(uri)) {
-                case TvUriMatcher.MATCH_WATCHED_PROGRAM_ID:
-                    if (!mHandler.hasMessages(
-                            MSG_UPDATE_WATCH_HISTORY, WatchedPrograms.CONTENT_URI)) {
-                        mHandler.obtainMessage(MSG_UPDATE_WATCH_HISTORY, uri).sendToTarget();
-                    }
-                    break;
+            if (TvUriMatcher.match(uri) == TvUriMatcher.MATCH_WATCHED_PROGRAM_ID) {
+                if (!mHandler.hasMessages(
+                        MSG_UPDATE_WATCH_HISTORY, WatchedPrograms.CONTENT_URI)) {
+                    mHandler.obtainMessage(MSG_UPDATE_WATCH_HISTORY, uri).sendToTarget();
+                }
             }
         }
     }
@@ -588,5 +581,4 @@ public class RecommendationDataManager implements WatchedHistoryManager.Listener
         @Override
         protected void handleMessage(Message msg, @NonNull RecommendationDataManager referent) {}
     }
-
 }

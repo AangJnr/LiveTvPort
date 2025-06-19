@@ -22,7 +22,7 @@ import android.app.LoaderManager;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
-import android.media.tv.TvContract;
+//import android.media.tv.TvContract;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -31,8 +31,10 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import com.dazn.business.MainActivity;
 import com.dazn.business.R;
+import com.dazn.business.TvContract;
 import com.dazn.business.data.ChannelDataManager;
 import com.dazn.business.data.api.Channel;
+import com.dazn.business.recommendation.RecommendationDataManager;
 
 /** Displays the watch history */
 public class RecentlyWatchedDialogFragment extends SafeDismissDialogFragment
@@ -71,7 +73,7 @@ public class RecentlyWatchedDialogFragment extends SafeDismissDialogFragment
                     @Override
                     public boolean setViewValue(View view, Cursor cursor, int columnIndex) {
                         String name = cursor.getColumnName(columnIndex);
-                        if (RecommendationDataManager.WatchedPrograms.COLUMN_CHANNEL_ID.equals(name)) {
+                        if (TvContract.WatchedPrograms.COLUMN_CHANNEL_ID.equals(name)) {
                             long channelId = cursor.getLong(columnIndex);
                             ((TextView) view).setText(String.valueOf(channelId));
                             // Update display number

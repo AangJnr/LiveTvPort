@@ -57,12 +57,6 @@ public interface TvSingletons extends BaseSingletons, HasBuiltInTunerManager, Ha
      *  5. Delete the method when all usages are migrated.
      */
 
-    /**
-     * Returns the @{@link TvSingletons} using the application context.
-     *
-     * @deprecated use injection instead.
-     */
-    @Deprecated
     static TvSingletons getSingletons(Context context) {
         return (TvSingletons) BaseApplication.getSingletons(context);
     }
@@ -71,17 +65,13 @@ public interface TvSingletons extends BaseSingletons, HasBuiltInTunerManager, Ha
 
     void handleInputCountChanged();
 
-    @Deprecated
     ChannelDataManager getChannelDataManager();
 
     /** @deprecated use injection instead. */
-    @Deprecated
     ProgramDataManager getProgramDataManager();
 
     PreviewDataManager getPreviewDataManager();
 
-    /** @deprecated use injection instead. */
-    @Deprecated
     DvrDataManager getDvrDataManager();
 
     DvrScheduleManager getDvrScheduleManager();
